@@ -7,22 +7,59 @@
             grid-template-areas: 
             "na fr";
 }
+#om_oss_wrap    {display: grid;
+                grid-template-columns: 200px 1fr;
+                grid-template-rows: 100px 1fr 70px;
+                grid-template-areas: 
+                "na he"
+                "na om"
+                "na fo";
+}
+
+#menu_wrap    {display: grid;
+         grid-template-columns: 200px 1fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: 
+        "na he"
+        "na om";
+}
+
+header {grid-area: he;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        border: 4px solid black;
+        background-color: rgb(17, 17, 17);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+footer {grid-area: he;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        border: 4px solid black;
+        background-color: rgb(17, 17, 17);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 
 #flex_nav {grid-area: na;
             display: flex;
-            justify-content: center;
             align-items: center;
             flex-direction: column;
-            border: 4px solid black
+            border: 4px solid black;
+            background-color: rgb(17, 17, 17)
 }
 
-#logo {width: 180px;
+#logo {width: 400px;
         height: auto;
-        padding: 10px;
+        padding: 0px;
 }
 
-.nav_sidor {padding: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;        
+.nav_sidor {padding: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white; 
 }
 
 #nav_front {color: darkblue;}
@@ -31,7 +68,14 @@
             background-size: cover;
             background-position: center;
             padding: 0;
-
-
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 200px;
 }
+#citat {font-family: 'Times New Roman', Times, serif;
+        color:grey;
+        text-shadow: black;
+}
+
 
