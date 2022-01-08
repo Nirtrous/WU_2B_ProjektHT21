@@ -1,5 +1,6 @@
 * {margin: 0;
-   padding: 0;}
+   padding: 0;
+}
 
 #grid_wrap {display: grid;
             grid-template-columns: 200px 1fr;
@@ -18,10 +19,9 @@
 
 #menu_wrap    {display: grid;
          grid-template-columns: 200px 1fr;
-        grid-template-rows: 100px 1fr;
+         grid-template-rows: 100vh;
         grid-template-areas: 
-        "na he"
-        "na om";
+        "na me"
 }
 
 header {grid-area: he;
@@ -67,7 +67,6 @@ footer {grid-area: he;
 #frontpage {background-image: url(../img/Storefront_Beanery.png);
             background-size: cover;
             background-position: center;
-            padding: 0;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -78,4 +77,47 @@ footer {grid-area: he;
         text-shadow: black;
 }
 
+#flex_meny {
+        grid-area: me;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/lucas-benjamin-GAM-7l4QzmI-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
 
+}
+
+.meny_boxar {
+        border: 4px solid black;
+        border-radius: 2px;
+        background-color: aquamarine;
+        margin: 40px;
+}
+
+#brunch {
+        background-image: url(../img/eiliv-sonas-aceron-99muSP3cqhY-unsplash.jpg);
+        height: 480px;
+        width: 320px;
+        background-size: cover;
+        background-position: center;
+
+}
+
+#bon {
+        background-image: url(../img/visual-stories-micheile-FhMB8pMge5U-unsplash.jpg);
+        height: 480px;
+        width: 320px;
+        background-size: cover;
+        background-position: center;
+
+}
+
+#drycker {
+        background-image: url(../img/ante-samarzija-lsmu0rUhUOk-unsplash.jpg);
+        height: 480px;
+        width: 320px;
+        background-size: cover;
+        background-position: center;
+
+}
