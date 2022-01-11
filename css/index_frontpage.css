@@ -3,24 +3,24 @@
 }
 
 #grid_wrap {display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 1fr 200px;
             grid-template-rows: 100vh;
             grid-template-areas: 
-            "na fr";
+            "fr na";
 }
 #om_oss_wrap    {display: grid;
-                grid-template-columns: 200px 1fr;
+                grid-template-columns: 1fr 20vh;
                 grid-template-rows: 1fr 10vh;
                 grid-template-areas: 
-                "na om"
-                "na fo";
+                "om na"
+                "fo na";
 }
 
 #menu_wrap    {display: grid;
-         grid-template-columns: 200px 1fr;
+         grid-template-columns: 1fr 200px;
          grid-template-rows: 100vh;
         grid-template-areas: 
-        "na me"
+        "me na"
 }
 
 
@@ -92,41 +92,28 @@ footer {grid-area: fo;
         border-radius: 2px;
         background-color: aquamarine;
         margin: 40px;
+        height: 600px;
+        width: 400px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 70px;
+
 }
 
 #brunch {
         background-image: url(../img/eiliv-sonas-aceron-99muSP3cqhY-unsplash.jpg);
-        height: 480px;
-        width: 320px;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
 }
 
 #bon {
         background-image: url(../img/christina-rumpf-qjh-BCHbHis-unsplash.jpg);
-        height: 480px;
-        width: 320px;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
 }
 
 #drycker {
-        background-image: url(../img/ante-samarzija-lsmu0rUhUOk-unsplash.jpg);
-        height: 480px;
-        width: 320px;
-        background-size: cover;
-        background-position: center;
-
+        background-image: url(../img/ante-samarzija-lsmu0rUhUOk-unsplash.jpg); 
 }
 
 .titel {
@@ -141,6 +128,8 @@ footer {grid-area: fo;
         font-size: 3ch;
         color: rgb(51, 204, 255);
         margin: 10px;
+        background: rgb(17, 17, 17);
+        border: black 2px solid;
 }
 
 
@@ -149,6 +138,8 @@ footer {grid-area: fo;
         font-size: 3ch;
         color: white;
         margin: 40px;
+        background: rgb(17, 17, 17);
+        border: black 2px solid;
 }
 
 #om_oss {
@@ -170,10 +161,10 @@ footer {grid-area: fo;
         gap: 100px
 }
 
-.om_oss_bild {
+#om_oss_bild_ceo {
         border: black 2px solid;
         height: auto;
-        width: 300px;
+        width: 600px;
 }
 
 .om_oss_text {
@@ -181,6 +172,42 @@ footer {grid-area: fo;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 200px;
+        justify-content: center;
+        width: 300px;
+        border: 2px solid black;
+        background: rgb(17, 17, 17);
+        color: whitesmoke;
+        font-size: 3ch;
+        gap: 30px;
+        padding: 30px;
 }
 
+.rubrik {
+        font-size: 4ch;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: orange;
+
+}
+
+#om_oss_bild_store {
+        border: black 2px solid;
+        height: auto;
+        width: 800 px;
+}
+
+#drinkar_text {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3ch;
+        color: white;
+        margin: 40px;
+        display: flex;
+        gap: 30px;
+        background: rgb(17, 17, 17);
+        border: black 2px solid;
+}
+
+.text_drinkar {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+}
