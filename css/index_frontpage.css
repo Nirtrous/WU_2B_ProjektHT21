@@ -4,16 +4,18 @@
 
 #grid_wrap {display: grid;
             grid-template-columns: 1fr 200px;
-            grid-template-rows: 100vh;
+            grid-template-rows: 1fr 100px;
             grid-template-areas: 
-            "fr na";
+            "fr na"
+            "fo fo"
+            ;
 }
 #om_oss_wrap    {display: grid;
                 grid-template-columns: 1fr 200px;
-                grid-template-rows: 1fr 100px;
+                grid-template-rows: 1fr;
                 grid-template-areas: 
                 "om na"
-                "fo na";
+                ;
 }
 
 #menu_wrap    {display: grid;
@@ -21,6 +23,7 @@
          grid-template-rows: 100vh;
         grid-template-areas: 
         "me na"
+        ;
 }
 
 
@@ -40,10 +43,11 @@ footer {grid-area: fo;
             flex-direction: column;
             border: 4px solid black;
             background-color: rgb(17, 17, 17);
-            gap: 30px;
+            gap: 80px;
+            padding: 48px;
 }
 
-#logo {width: 200px;
+#logo {width: 150px;
         height: auto;
 }
 
@@ -64,11 +68,8 @@ footer {grid-area: fo;
 
 #nav_front {color: darkblue;}
 
-#frontpage {background-image: url(../img/Storefront_Beanery.png);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: flex-end;
+#frontpage {background-image: url(../img/p-o-sitive-negative-6mCyvI55hTY-unsplash.jpg), url(../img/carl-raw-_NEzKE6Zdp4-unsplash.jpg);
+            background-position: top, bottom;
             align-items: center;
             padding: 200px;
 }
@@ -93,15 +94,15 @@ footer {grid-area: fo;
         border-radius: 2px;
         background-color: aquamarine;
         margin: 40px;
-        height: 600px;
-        width: 400px;
+        height: 750px;
+        width: 450px;
         background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: end;
-        gap: 70px;
+        gap: 110px;
 
 }
 
@@ -211,4 +212,9 @@ footer {grid-area: fo;
         display: flex;
         flex-direction: column;
         gap: 30px;
+}
+
+#drinkar_kostnad {
+                color:rgb(51, 204, 255);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
