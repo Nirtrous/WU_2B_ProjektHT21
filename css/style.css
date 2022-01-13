@@ -1,0 +1,275 @@
+* {margin: 0;
+   padding: 0;
+}
+
+#flex_nav {grid-area: na;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 4px solid black;
+        background-color: rgb(17, 17, 17);
+        gap: 80px;
+        padding-top: 50px;
+}
+
+#logo {width: 150px;
+    height: auto;
+    border: rgb(17,17,17) 4px solid;
+    border-radius: 40px;
+}
+
+#nav_links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+       
+
+
+
+}
+.nav_sidor {
+        color: white; 
+        font-size: 4ch;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+}
+
+.nav_sidor:hover {
+                    color: grey;
+}
+
+#grid_wrap {display: grid;
+            grid-template-columns: 1fr 200px;
+            grid-template-rows: 1fr 100px;
+            grid-template-areas: 
+            "fr na"
+            "fo fo"
+            ;
+}
+#om_oss_wrap    {display: grid;
+                grid-template-columns: 1fr 200px;
+                grid-template-rows: 1fr;
+                grid-template-areas: 
+                "om na"
+                ;
+}
+
+#meny_wrap    {display: grid;
+         grid-template-columns: 1fr 200px;
+         grid-template-rows: 100vh;
+        grid-template-areas: 
+        "me na"
+        ;
+}
+
+
+footer {grid-area: fo;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(70, 59, 59);
+        border: 4px solid black;
+        background-color: rgb(17, 17, 17);
+        padding: 20px;
+}
+
+
+#frontpage {background-image: url(../img/Bakgrund_front2.jpg);
+            background-position: top;
+            background-size:cover;
+            padding: 170px;
+            display: flex;
+            justify-content: center;
+            grid-area: fr;
+}
+
+#flex_front {   width: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 80px;
+
+}
+
+.front_inner_flex {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+}
+
+
+.front_text {font-family: 'Times New Roman', Times, serif;
+        color:white;
+        font-size: 5ch;
+        font-weight: 700;
+}
+
+#front_name {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgba(189,93,58,255);
+        font-size: 9ch;
+        background:rgb(17, 17, 17);
+        border: black 4px solid;
+        border-radius: 12px;
+
+
+}
+
+#flex_meny {
+        grid-area: me;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/lucas-benjamin-GAM-7l4QzmI-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+
+}
+
+.meny_boxar {
+        border: 4px solid black;
+        border-radius: 2px;
+        background-color: aquamarine;
+        margin: 40px;
+        height: 800px;
+        width: 450px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 110px;
+        border-radius: 12px;
+}
+
+#meny_brunch {
+        background-image: url(../img/eiliv-sonas-aceron-99muSP3cqhY-unsplash.jpg);
+}
+
+#meny_bon {
+        background-image: url(../img/christina-rumpf-qjh-BCHbHis-unsplash.jpg);
+}
+
+#meny_drycker {
+        background-image: url(../img/irina-sergeeva-5wyaRUWrZJg-unsplash.jpg); 
+        gap: 90px;
+}
+
+.meny_titel {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 5ch;
+        color: white;
+        margin: 30px;
+}
+
+.meny_kostnad {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 3ch;
+        color: rgb(51, 204, 255);
+        margin: 10px;
+        background: rgb(17, 17, 17);
+        border: black 2px solid;
+        border: black 2px solid;
+        border-radius: 8px;
+}
+
+
+.meny_inkluderar {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3ch;
+        color: white;
+        margin: 40px;
+        background: rgb(17, 17, 17);
+        border: black 2px solid;
+        border-radius: 8px;
+        padding: 20px;
+}
+
+
+#meny_drinkar_text {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3ch;
+        color: white;
+        margin: 40px;
+        display: flex;
+        gap: 30px;
+        background: rgb(17, 17, 17);
+        border: black 2px solid;
+        border-radius: 8px;
+        padding: 20px;
+}
+
+.meny_kostnad_drinkar {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+}
+
+#meny_drinkar_pris {
+                color:rgb(51, 204, 255);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+#om_oss {
+        grid-area: om;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/carl-raw-_NEzKE6Zdp4-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        padding: 40px;
+        gap: 70px;
+}
+
+.om_oss_inner_flexbox {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+}
+
+#om_oss_bild_ceo {
+        border: black 4px solid;
+        height: auto;
+        width: 600px;
+        border-radius: 12px;
+}
+.om_oss_rubrik {
+        font-size: 4ch;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: orange;
+
+}
+
+.om_oss_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        border: 2px solid black;
+        background: rgb(17, 17, 17);
+        color: whitesmoke;
+        font-size: 3ch;
+        gap: 30px;
+        padding: 30px;
+        border-radius: 12px;
+        
+}
+
+
+#om_oss_bild_store {
+        border: black 4px solid;
+        height: auto;
+        width: 800 px;
+        border-radius: 12px;
+        background: black;
+}
