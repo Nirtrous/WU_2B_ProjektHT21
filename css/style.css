@@ -14,8 +14,6 @@
 
 #logo {width: 150px;
     height: auto;
-    border: rgb(17,17,17) 4px solid;
-    border-radius: 40px;
 }
 
 #nav_links {
@@ -68,15 +66,6 @@
 }
 
 
-footer {grid-area: fo;
-        font-family: 'Times New Roman', Times, serif;
-        color: rgb(70, 59, 59);
-        border: 4px solid black;
-        background-color: rgb(17, 17, 17);
-        padding: 20px;
-}
-
-
 #frontpage {background-image: url(../img/Bakgrund_front2.jpg);
             background-position: top;
             background-size:cover;
@@ -115,9 +104,31 @@ footer {grid-area: fo;
         background:rgb(17, 17, 17);
         border: black 4px solid;
         border-radius: 12px;
+}
 
+#front_text_bakgrund {
+                        background: rgba(17, 17, 17, 0.7);
+                        border: rgba(17, 17, 17, 0.7) 2px solid;
+                        gap: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 50px;
+                        padding: 20px;
+                        border-radius: 15px;
 
 }
+
+footer {grid-area: fo;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(70, 59, 59);
+        border: 4px solid black;
+        background-color: rgb(17, 17, 17);
+        padding: 20px;
+}
+
+
 
 #flex_meny {
         grid-area: me;
@@ -172,9 +183,8 @@ footer {grid-area: fo;
         font-size: 3ch;
         color: rgb(51, 204, 255);
         margin: 10px;
-        background: rgb(17, 17, 17);
-        border: black 2px solid;
-        border: black 2px solid;
+        background: rgba(17, 17, 17, 0.7);
+        border: rgba(17, 17, 17, 0.7) 2px solid;
         border-radius: 8px;
 }
 
@@ -184,8 +194,8 @@ footer {grid-area: fo;
         font-size: 3ch;
         color: white;
         margin: 40px;
-        background: rgb(17, 17, 17);
-        border: black 2px solid;
+        background: rgba(17, 17, 17, 0.7);
+        border: rgba(17, 17, 17, 0.7) 2px solid;
         border-radius: 8px;
         padding: 20px;
 }
@@ -198,8 +208,8 @@ footer {grid-area: fo;
         margin: 40px;
         display: flex;
         gap: 30px;
-        background: rgb(17, 17, 17);
-        border: black 2px solid;
+        background: rgba(17, 17, 17, 0.7);
+        border: rgba(17, 17, 17, 0.7) 2px solid;
         border-radius: 8px;
         padding: 20px;
 }
